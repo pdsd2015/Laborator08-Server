@@ -1,0 +1,21 @@
+html {
+	min-height: 100%;
+}
+
+body {
+	height: 100%;
+	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #888;
+	font-size: 13px;
+	line-height: 20px;
+	min-width: 998px;
+	background:url(../images/background.png) repeat;
+}
+
+th { font-size: 14px; background-color: #555555; color:#ffffff; }
+td { font-size: 14px; margin-top: 20px;}
+
+a         { text-decoration: none; }
+a:active  { color: green; }
+a:hover   { color: gray; text-decoration: underline; }

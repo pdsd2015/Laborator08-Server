@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>GoogleCloudMessagingServer</display-name>
+  <welcome-file-list>
+    <welcome-file>MessagePushServlet</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>DeviceRegistrationServlet</display-name>
+    <servlet-name>DeviceRegistrationServlet</servlet-name>
+    <servlet-class>ro.pub.cs.systems.pdsd.lab08.googlecloudmessaging.servlets.DeviceRegistrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeviceRegistrationServlet</servlet-name>
+    <url-pattern>/DeviceRegistrationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MessagePushServlet</display-name>
+    <servlet-name>MessagePushServlet</servlet-name>
+    <servlet-class>ro.pub.cs.systems.pdsd.lab08.googlecloudmessaging.servlets.MessagePushServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MessagePushServlet</servlet-name>
+    <url-pattern>/MessagePushServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RegisteredDevicesServlet</display-name>
+    <servlet-name>RegisteredDevicesServlet</servlet-name>
+    <servlet-class>ro.pub.cs.systems.pdsd.lab08.googlecloudmessaging.servlets.RegisteredDevicesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisteredDevicesServlet</servlet-name>
+    <url-pattern>/RegisteredDevicesServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
